@@ -1,7 +1,7 @@
 # t430-coreboot
 coreboot rom for thinkpad t430
 
-12m image for the x230, with vga in "native" mode, seabios and all the secondary payloads added.
+12m image for the t430, with vga in "native" mode, seabios and all the secondary payloads added.
 
 seabios time-wait-menu reduced to 1 second only.
 
