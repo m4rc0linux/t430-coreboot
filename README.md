@@ -21,3 +21,5 @@ dd if=m4rc0t430.rom of=coreboot4.rom bs=1M skip=8
 then you can flash the coreboot roms with final number 8 and 4 on the 8m nd 4m chips.
 
 To compile a different version the "config" file could be a starting point.
+
+To see how this (or my others built images) works, just have a look into my youtube https://www.youtube.com/user/marcolinoxz
