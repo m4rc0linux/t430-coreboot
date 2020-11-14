@@ -5,26 +5,33 @@ coreboot roms for thinkpad t430
 
 - m4rc0t430.rom instead uses the vga rom and supports intel wifi cards and bluetooth
 
-In both cases the 12m images have seabios and all the secondary payloads added.
+In both cases the 12m images have seabios and all the secondary payloads added and:
 
-seabios time-wait-menu reduced to 1 second only.
+1) seabios time-wait-menu reduced to 1 second only.
 
-Bootspash added.
+2) Bootspash added.
 
-me.bin file has been me_cleaned
+3) me.bin file has been me_cleaned
 
-to flash it internally, if already running coreboot and bios unlocked:
+how to flash:
+
+- internally, if already running coreboot and bios unlocked:
+
 sudo flashrom -p internal:laptop=force_I_want_a_brick -w name.rom --ifd --image bios -V
+
 or
+
 sudo flashrom -p internal:laptop=force_I_want_a_brick -w name.rom -V
 
-To flash externally the rom needs to be splitted in 2
+
+- externally the rom needs to be splitted in 2
 
 dd if=name.rom of=coreboot8.rom bs=1M count=8
 
 dd if=name.rom of=coreboot4.rom bs=1M skip=8
 
 then you can flash the coreboot roms with final number 8 and 4 on the 8m nd 4m chips.
+
 
 To compile a different version the "config" file could be a starting point.
 
