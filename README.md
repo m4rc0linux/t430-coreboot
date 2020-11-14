@@ -1,8 +1,9 @@
 # t430-coreboot
 coreboot roms for thinkpad t430
 
-m4rc0freet430.rom uses libgfxinit at the resolution 1024x768 and has no support to intel wifi cards and bluetooth
-m4rc0t430.rom instead uses the vga rom and supports intel wifi cards and bluetooth
+- m4rc0freet430.rom uses libgfxinit at the resolution 1024x768 and has no support to intel wifi cards and bluetooth
+
+- m4rc0t430.rom instead uses the vga rom and supports intel wifi cards and bluetooth
 
 In both cases the 12m images have seabios and all the secondary payloads added.
 
