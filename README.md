@@ -1,5 +1,13 @@
 # t430-coreboot
-coreboot roms for thinkpad t430
+
+coreboot V 4.13 rom for thinkpad t430 featuring seabios v. 1.14.0 https://seabios.org/Releases#SeaBIOS_1.14.0
+commit 5c186c6777c9438ff4681929c9c25c98dee28bef
+Secondary payloads added https://www.coreboot.org/Payloads
+Nvramcui
+Coreinfo: https://www.coreboot.org/Coreinfo
+Nemtest: https://www.coreboot.org/Memtest86
+Tint: https://www.coreboot.org/Tint
+
 
 - m4rc0freet430.rom uses libgfxinit at the resolution 1024x768 and has no support to intel wifi cards and bluetooth
 
